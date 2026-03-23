@@ -1,0 +1,1 @@
+export type Category = 'Frontend' | 'Backend' | 'DevOps' | 'Data' | 'Gamedev' | 'General';
