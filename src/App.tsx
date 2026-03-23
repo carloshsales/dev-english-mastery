@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import './App.css'
-
+import { StatCard } from './components/StatCard'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+      <StatCard label="Termos" value="muitos"/>
     </>
   )
 }
