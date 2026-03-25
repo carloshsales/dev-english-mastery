@@ -1,6 +1,6 @@
 interface StatCardProps {
     label: string;
-    value: string;
+    value: number;
     color?: 'blue' | 'green' | 'red' | 'pink'
 }
 
