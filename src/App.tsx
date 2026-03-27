@@ -3,10 +3,12 @@ import './App.css';
 import { StatCard } from './components/StatCard';
 import type { VocabularyTerm } from './types/VocabularyTerm';
 import { vocabularyData } from './mocks/vocabulary';
+import { GlassCard } from './components/GlassCard';
 
 
 function App() {
   const [terms, setTerms] = useState<VocabularyTerm[]>(vocabularyData);
+  const [isFlipped, setIsFlipped] = useState(false);
   const totalTerms = vocabularyData.length;
   const masteredCount = terms.filter(t => t.isMastered).length;
   
@@ -21,6 +23,12 @@ function App() {
           <StatCard label='Mastered' value={masteredCount} color='green'/>
         </div>
       </header>
+      <div>
+        <GlassCard term={terms[1]} isFlipped={isFlipped} onFlip={function (): void {
+          
+        } }/>
+
+      </div>
     </main>
   )
 }
