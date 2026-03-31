@@ -19,7 +19,10 @@
 
   .perspective-1000 { perspective: 1000px; }
   .preserve-3d { transform-style: preserve-3d; }
-  .backface-hidden { backface-visibility: hidden; }
+  .backface-hidden {
+    -webkit-backface-visibility: hidden; /* Adicione o prefixo webkit! */
+    backface-visibility: hidden;
+  }
 }
 
 body {

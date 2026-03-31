@@ -24,8 +24,8 @@ function App() {
         </div>
       </header>
       <div>
-        <GlassCard term={terms[1]} isFlipped={isFlipped} onFlip={function (): void {
-          
+        <GlassCard term={terms[3]} isFlipped={isFlipped} onFlip={function (): void {
+          setIsFlipped(!isFlipped)
         } }/>
 
       </div>

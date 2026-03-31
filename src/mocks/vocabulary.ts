@@ -1,6 +1,6 @@
 import type { VocabularyTerm } from "../types/VocabularyTerm";
 
-export const vocabularyData: VocabularyTerm[] = [
+export const VocabularyData: VocabularyTerm[] = [
   {
     id: '1',
     term: 'Middleware',
